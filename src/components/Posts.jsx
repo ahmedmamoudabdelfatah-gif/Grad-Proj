@@ -2,11 +2,14 @@ import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Post from "./Post";
 import "../styles/posts.css"
+import Navbar from "./Navbar";
 
 
 export default function Posts() {
     return (
-        <div className="posts-main">
+        <div>
+            <Navbar />
+            <div className="posts-main">
             <div class="posts-wraper">
                 <div class="start-post">
                     <div className="img"><FontAwesomeIcon icon={faUserAlt} style={{ height: "25px", color: "#414141"}} /></div>
@@ -17,6 +20,7 @@ export default function Posts() {
                 <Post />
                 </div>
             </div>
+        </div>
         </div>
     );
 }

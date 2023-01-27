@@ -9,8 +9,8 @@ export default function Navbar() {
         <div className="container">
         <div className="logo">PREZOPHOPIA</div>
         <ul className="nav-bar">
-          <li><Link className="link" to={"/"}>Home</Link></li>
-          <li><Link className="link" to={"/posts"}>Posts</Link></li>
+          <li className="section"><Link className="link" to={"/"}>Home</Link></li>
+          <li className="section"><Link className="link" to={"/posts"}>Posts</Link></li>
           <li className="btn"><Link className="link" to={"/signin"}>Login</Link></li>
           <li className="btn"><Link className="link" to={"/register"}>Register</Link></li>
         </ul>

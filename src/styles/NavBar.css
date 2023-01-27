@@ -1,38 +1,25 @@
-.container {
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.header {
-    height: 8vh;
+/* Start Header */
+.header{
     background-color: white;
     box-shadow: 0 0 10px #e8e7e7;
     position: fixed;
     width: 100%;
     z-index: 999;
+    height: 72px;
 }
-
-.header .container {
+.header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
 }
-
-.header .nav-bar {
+.header .nav-bar{
     display: flex;
-}
-
-.header .nav-bar li {
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-
-.logo {
+.logo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,43 +30,24 @@
     box-shadow: 0 0 1px #e8e7e7
 }
 
-.btn {
-    color: white;
-    background-color: var(--input-focus-color);
-    margin: 15px 20px;
-    padding: 10px 20px;
-    font-weight: 600;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0px 2px 1px 1px #185abc;
-}
-
-
-
-.btn:active {
-    transform: scale(0.98);
-    box-shadow: inset 1px 3px 5px #185abc;
-}
-
-.header .nav-bar li a {
+.header .nav-bar .section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 72px;
+    padding: 30px 20px;
     position: relative;
     color: black;
     font-weight: 600;
-    padding: 0 30px;
-    transition: var(--main-transition);
     cursor: pointer;
+    max-height: 72px;
+    transition: var(--main-transition);
 }
 
-.header .nav-bar>li>a:hover {
+.header .nav-bar > .section:hover{
     background-color: #fafafa;
     border-radius: 10px;
 }
-
-.header .nav-bar>li>a::before {
+.header .nav-bar > .section::before{
     content: "";
     width: 100%;
     height: 4px;
@@ -88,8 +56,28 @@
     left: 0;
     transition: var(--main-transition);
 }
-
-.header .nav-bar>li>a:hover::before {
+.header .nav-bar > .section:hover::before{
     background-color: var(--main-color);
     border-radius: 1px;
 }
+
+.btn{
+    color: white;
+    background-color: var(--input-focus-color);
+    margin: 0px 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:active{
+    transform: scale(0.98);
+    box-shadow: inset 1px 3px 5px #185abc;
+}
+.header .nav-bar .section a{
+    color: black;
+}
+.header .nav-bar .btn a{
+    color: white;
+}
+/* End Header */
